@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>study-socketio</title>
+    <script src="js/client.js" defer></script>
+    <style>
+      .chatView {
+        margin-top: 1em;
+      }
+      .chatView p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h5>study-socketio</h5>
+    <form id="joinForm">
+      <input type="text" name="username" placeholder="username" />
+      <input type="submit" name="join" value="join" />
+    </form>
+
+    <form id="chatForm">
+      <input type="text" name="message" placeholder="message" disabled />
+      <input type="submit" name="send" value="send" disabled />
+    </form>
+    <div id="chatView" class="chatView"></div>
+  </body>
+</html>
